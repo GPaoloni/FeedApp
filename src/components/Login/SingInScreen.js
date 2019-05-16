@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, KeyboardAvoidingView, StyleSheet, Text, View } from 'react-native'
 
 import logo from '../../images/logo.png'
 import SingInForm from './SingInForm.js'
@@ -7,13 +7,15 @@ import SingInForm from './SingInForm.js'
 export default class SingInScreen extends React.Component {
   render() {
     return(
-      <View style={styles.container}>
+      <KeyboardAvoidingView behavior="padding" style={styles.container}>
+      {/*<View style={styles.container}>*/}
         <View style={styles.logoContainer}>
           <Image source={logo} style={styles.logo}/>
           <Text style={styles.logoText}>App Ciudad</Text>
         </View>
         <SingInForm />
-      </View>
+    {/* </View> */}
+      </KeyboardAvoidingView>
     )
   }
 }
