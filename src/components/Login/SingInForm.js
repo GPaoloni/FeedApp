@@ -1,19 +1,17 @@
-import React from 'react'
+import React from 'react';
 import { Dimensions, 
          KeyboardAvoidingView,
-         Platform,
          StyleSheet, 
          Text,
          TextInput, 
-         TouchableOpacity } from 'react-native'
+         TouchableOpacity } from 'react-native';
 
 const { width: WIDTH } = Dimensions.get('window')
 
+
 const SingInForm = (props) => {
   return (
-    <KeyboardAvoidingView style={styles.container} 
-    behavior={Platform.OS === "ios" ? "padding" : null}
-    enabled>
+    <KeyboardAvoidingView style={styles.container} behavior='padding'>
       <TextInput style={styles.input} 
         placeholder={'username or email'}
         placeholderTextColor={'rgba(0,0,0,0.4)'}
@@ -60,7 +58,7 @@ const styles = StyleSheet.create({
     width: WIDTH - 55,
     borderRadius: 25,
     paddingHorizontal: 15,
-    marginBottom: 20,
+    marginBottom: 50,
     backgroundColor: '#00796B',
   },
   buttonText: {

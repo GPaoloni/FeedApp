@@ -3,7 +3,6 @@ import { Image, StyleSheet, Text, View } from 'react-native'
 
 import logo from '../../images/logo.png'
 import SingInForm from './SingInForm.js'
-import { ScrollView } from 'react-native-gesture-handler';
 
 export default class SingInScreen extends React.Component {
   render() {
@@ -13,10 +12,7 @@ export default class SingInScreen extends React.Component {
           <Image source={logo} style={styles.logo}/>
           <Text style={styles.logoText}>App Ciudad</Text>
         </View>
-        <View>
-          <SingInForm />
-        </View>
-        <View style={{ flex: 1 }} />
+        <SingInForm />
       </View>
     )
   }
