@@ -15,24 +15,7 @@ import {
 
 import AppStack from './src/screens/AppStack.js'
 import AuthLoadingScreen from './src/screens/AuthLoading.js'
-import AuthScreen from './src/components/Login/SingInScreen.js'
-//import AuthStack from './src/components/Navigation/AuthStack.js';
-
-// This should be removed as is used only for testing
-const AuthStack = createStackNavigator(
-  {
-    SingIn: { screen: AuthScreen },
-  },
-  {
-    defaultNavigationOptions: {
-      headerStyle: {
-        backgroundColor: '#00796B',
-      },
-      headerTintColor: '#FFFFFF',
-      title: 'SingIn',
-    },
-  }
-);
+import AuthStack from './src/screens/AuthStack.js'
 
 const SwitchNavigator = createSwitchNavigator(
   {

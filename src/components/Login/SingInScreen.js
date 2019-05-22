@@ -8,13 +8,11 @@ export default class SingInScreen extends React.Component {
   render() {
     return(
       <KeyboardAvoidingView behavior="padding" style={styles.container}>
-      {/*<View style={styles.container}>*/}
         <View style={styles.logoContainer}>
           <Image source={logo} style={styles.logo}/>
           <Text style={styles.logoText}>App Ciudad</Text>
         </View>
         <SingInForm />
-    {/* </View> */}
       </KeyboardAvoidingView>
     )
   }
